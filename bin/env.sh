@@ -1,2 +1,2 @@
-MY_API_NAME='sample-node-api'
-MY_API_PORT='18000'
+MY_API_NAME='simple-api'
+MY_API_PORT='8080'
