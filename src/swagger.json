@@ -64,6 +64,10 @@
         "price": {
           "type": "number",
           "example": "2.50"
+        },
+        "isActive": {
+          "type": "boolean",
+          "example": true
         }
       }
     }

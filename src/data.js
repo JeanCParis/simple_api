@@ -9,7 +9,8 @@ module.exports = {
       ],
       "label":"EVIAN EAUX MINERALE RPET 6L",
       "productFamily":"0821 - EAUX PLATES 1 LITRE OU +",
-      "price":2.5
+      "price":2.5,
+      "isActive" : false
     },
     {
       "cui":"P0200000000104U",
@@ -19,7 +20,8 @@ module.exports = {
       ],
       "label":"EVIAN EAUX MINERALE LIGHT RPET 6L",
       "productFamily":"0821 - EAUX PLATES 1 LITRE OU +",
-      "price":2.6
+      "price":2.6,
+      "isActive" : true
     }
   ],
 }
