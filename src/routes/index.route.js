@@ -9,16 +9,12 @@
 */
 
 const express = require('express');
-const cars = require('./cars.route');
 const product = require('./product.route');
-const accounts = require('./accounts.route');
 const swagger = require('./swagger.route');
 
 const router = express.Router();
 
-router.use('/cars', cars);
 router.use('/product', product);
-router.use('/accounts', accounts);
 router.use('/', swagger);
 
 router.get('/', (req, res) => res.send('Sample Node API Version1'));
