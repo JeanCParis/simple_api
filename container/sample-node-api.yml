@@ -60,11 +60,11 @@ spec:
               cpu: "100m"
           ports:
             - name: sna-port
-              containerPort: 8080
+              containerPort: 3000
               protocol: TCP
           readinessProbe:
             tcpSocket:
-              port: 8080
+              port: 3000
             initialDelaySeconds: 30
             # this should give 18 * periodSeconds(default to 10) seconds about 3 minutes to confirm it's ready
             failureThreshold: 18

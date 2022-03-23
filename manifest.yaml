@@ -17,4 +17,4 @@ apimlServices:
   static:
     - file: sample-node-api.yml
 configs:
-  port: 8080
+  port: 3000

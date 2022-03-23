@@ -3,7 +3,7 @@
   ,"info":{"description":"Product API"
   ,"version":"1.0"
   ,"title":"Product API"}
-  ,"host":"localhost:8080"
+  ,"host":"localhost:3000"
   ,"basePath":"/"
   ,"tags":[{"name":"Product","description":"Product API"}]
   ,"schemes":["http"]
