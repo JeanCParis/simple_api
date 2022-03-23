@@ -1,0 +1,75 @@
+{
+  "swagger":"2.0"
+  ,"info":{"description":"Product API"
+  ,"version":"1.0"
+  ,"title":"Product API"}
+  ,"host":"localhost:3000"
+  ,"basePath":"/"
+  ,"tags":[{"name":"Product","description":"Product API"}]
+  ,"schemes":["http"]
+  ,"produces": ["application/json"],
+  "paths": {
+    "/product/{cug}": {
+      "get": {
+        "x-swagger-router-controller": "product",
+        "operationId": "getProduct",
+        "tags": ["Product"],
+        "summary": "Get a product by its cug",
+        "parameters": [ {
+          "name": "cug",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }],
+        "responses": {
+          "200": {
+            "description": "Get Product by CUG",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          },
+          "404": {
+            "description": "Product not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions":{
+    "Product": {
+      "properties": {
+        "cug": {
+          "type": "string",
+          "example": "000273654"
+        },
+        "cui": {
+          "type": "string",
+          "example": "P0200000000103U"
+        },
+        "eans": {
+          "type": "array",
+          "items": {
+              "type": "string"
+          },
+          "example": "[\"3068320125367\", \"3068320125368\"]"
+        },
+        "label": {
+          "type": "string",
+          "example": "EVIAN EAUX MINERALE RPET 6L"
+        },
+        "family": {
+          "type": "string",
+          "example": "0821 - EAUX PLATES 1 LITRE OU +"
+        },
+        "price": {
+          "type": "number",
+          "example": "2.50"
+        },
+        "isActive": {
+          "type": "boolean",
+          "example": true
+        }
+      }
+    }
+  }
+}

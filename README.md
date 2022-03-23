@@ -1,2 +1,2 @@
-# sample-node-api
-A sample node js api for finding cars and accounts for a dealership
+# sample-node-api  
+A simple node js api for finding Products, used for evaluation purposes
